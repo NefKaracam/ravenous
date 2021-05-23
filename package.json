@@ -4,6 +4,7 @@
   "homepage": "https://nefkaracam.github.io/ravenous/",
   "private": true,
   "dependencies": {
+    "fetch-jsonp": "^1.1.3",
     "gh-pages": "^3.1.0",
     "react": "^15.6.0",
     "react-dom": "^15.6.0",

@@ -1,8 +1,10 @@
+import jsonpFetch from "fetch-jsonp";
+
 const apiKey = 'azoHYRNYPZnEOnhBybFMYvu4_aACyhDvsfhWc6bqAq0odQfxz09iQZrmNJaI7JOH0XKxPB208V88BLb7uEjtBzr0r7o9f88U_AiU2vVo8Vjro5FbSgM9f5xOXuJmYHYx';
 
 const Yelp = {
   search(term, location, sortBy) {
-    return fetch(`https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`, {
+    return fetch(`https://cors.bridged.cc/https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`, {
       headers: {
         Authorization: `Bearer ${apiKey}`
       }
