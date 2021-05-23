@@ -1,8 +1,10 @@
 {
   "name": "ravenous",
   "version": "0.1.0",
+  "homepage": "https://nefkaracam.github.io/ravenous/",
   "private": true,
   "dependencies": {
+    "gh-pages": "^3.1.0",
     "react": "^15.6.0",
     "react-dom": "^15.6.0",
     "whatwg-fetch": "^2.0.3"
@@ -14,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
